@@ -62,7 +62,6 @@ provider:
 #    - include-me-dir/**
 
  functions:
-  
   getAuthURL:
     handler: handler.getAuthURL
     events:

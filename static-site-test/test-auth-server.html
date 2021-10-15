@@ -69,7 +69,8 @@
       const codeValue = document.getElementById("code");
       const getAccessToken = document.getElementById("getToken");
       const accessTokenElement = document.getElementById("accessToken");
-      const getToken = "YOUR_LAMBDA_GET_TOKEN_ENDPOINT";
+      const getToken =
+        "https://hr1e030yj2.execute-api.eu-central-1.amazonaws.com/dev/api/token/{code}";
 
       getAccessToken.onclick = function () {
         let code = codeValue.value;

@@ -193,7 +193,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1634292536215-2021-10-15T10:08:56.215Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1634293118497-2021-10-15T10:18:38.497Z/auth-server.zip"
               },
               "Handler": "handler.getAuthURL",
               "Runtime": "nodejs12.x",
@@ -226,7 +226,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1634292536215-2021-10-15T10:08:56.215Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1634293118497-2021-10-15T10:18:38.497Z/auth-server.zip"
               },
               "Handler": "handler.getAccessToken",
               "Runtime": "nodejs12.x",
@@ -259,7 +259,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/auth-server/dev/1634292536215-2021-10-15T10:08:56.215Z/auth-server.zip"
+                "S3Key": "serverless/auth-server/dev/1634293118497-2021-10-15T10:18:38.497Z/auth-server.zip"
               },
               "Handler": "handler.getCalendarEvents",
               "Runtime": "nodejs12.x",
@@ -540,7 +540,7 @@
               "GetCalendarEventsLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1634292522863": {
+          "ApiGatewayDeployment1634293102788": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -893,7 +893,7 @@
     "artifact": "C:\\Users\\Zlatan\\OneDrive\\Documents\\GitHub\\meet\\auth-server\\.serverless\\auth-server.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/auth-server/dev/1634292536215-2021-10-15T10:08:56.215Z",
+    "artifactDirectoryName": "serverless/auth-server/dev/1634293118497-2021-10-15T10:18:38.497Z",
     "artifact": "auth-server.zip"
   }
 }

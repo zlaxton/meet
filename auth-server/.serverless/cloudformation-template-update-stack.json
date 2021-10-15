@@ -161,13 +161,13 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/auth-server/dev/1634278617209-2021-10-15T06:16:57.209Z/auth-server.zip"
+          "S3Key": "serverless/auth-server/dev/1634281197837-2021-10-15T06:59:57.837Z/auth-server.zip"
         },
         "Handler": "handler.getAuthURL",
         "Runtime": "nodejs12.x",
         "FunctionName": "auth-server-dev-getAuthURL",
         "MemorySize": 1024,
-        "Timeout": 60,
+        "Timeout": 120,
         "Environment": {
           "Variables": {
             "CLIENT_ID": "799180968225-imqq3rh4601pc9t28hf585qsptqd6tb2.apps.googleusercontent.com",
@@ -187,7 +187,7 @@
         "GetAuthURLLogGroup"
       ]
     },
-    "GetAuthURLLambdaVersion35zoNWWsvfXlf0KSVpsbGwGxuDu9BMRXok4VsqBCyM": {
+    "GetAuthURLLambdaVersionOXwdJXDW6Kj1MdjitE2Yw4EpILIDAxlmIbARJ098": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
@@ -282,7 +282,7 @@
         "GetAuthURLLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1634278535849": {
+    "ApiGatewayDeployment1634281182994": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -344,7 +344,7 @@
     "GetAuthURLLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAuthURLLambdaVersion35zoNWWsvfXlf0KSVpsbGwGxuDu9BMRXok4VsqBCyM"
+        "Ref": "GetAuthURLLambdaVersionOXwdJXDW6Kj1MdjitE2Yw4EpILIDAxlmIbARJ098"
       },
       "Export": {
         "Name": "sls-auth-server-dev-GetAuthURLLambdaFunctionQualifiedArn"

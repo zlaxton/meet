@@ -17,7 +17,13 @@ const credentials = {
   token_uri: "https://oauth2.googleapis.com/token",
   auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
   redirect_uris: ["https://zlaxton.github.io/meet/"],
-  javascript_origins: ["https://zlaxton.github.io", "http://localhost:8080"],
+  javascript_origins: [
+    "https://zlaxton.github.io",
+    "http://localhost:8080",
+    "http://45.74.47.57:8080",
+    "http://192.168.1.4:8080",
+    "http://127.0.0.1:8080",
+  ],
 };
 const { client_secret, client_id, redirect_uris, calendar_id } = credentials;
 const oAuth2Client = new google.auth.OAuth2(

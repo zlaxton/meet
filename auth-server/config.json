@@ -1,6 +1,1 @@
-{
-    "CLIENT_ID": "799180968225-hd50fokugteilkaot6ejjkl6hgbd5pn9.apps.googleusercontent.com",
-    "PROJECT_ID": "meet-app-328810",
-    "CLIENT_SECRET": "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",
-    "CALENDAR_ID": "fullstackwebdev@careerfoundry.com"
-  }
+{"web":{"client_id":"799180968225-hd50fokugteilkaot6ejjkl6hgbd5pn9.apps.googleusercontent.com","project_id":"meet-app-328810","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_secret":"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","redirect_uris":["https://zlaxton.github.io/meet"],"javascript_origins":["https://zlaxton.github.io"]}}

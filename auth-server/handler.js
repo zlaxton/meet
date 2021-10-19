@@ -19,6 +19,7 @@ const credentials = {
   redirect_uris: ["https://zlaxton.github.io/meet/"],
   javascript_origins: [
     "https://zlaxton.github.io",
+    "http://localhost:3000",
     "http://localhost:8080",
     "http://45.74.47.57:8080",
     "http://192.168.1.4:8080",

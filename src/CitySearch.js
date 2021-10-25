@@ -12,17 +12,18 @@ class CitySearch extends Component {
     const suggestions = this.props.locations.filter((location) => {
       return location.toUpperCase().indexOf(value.toUpperCase()) > -1;
     });
-    handleItemClicked = (suggestion) => {
-      this.setState({
-        query: suggestion
-      });
-    }
-
     this.setState({
       query: value,
       suggestions,
     });
   };
+  handleItemClicked = (suggestion) => {
+    this.setState({
+      query: suggestion
+    });
+  }
+  
+
 
   render() {
     return (
@@ -48,5 +49,6 @@ class CitySearch extends Component {
     );
   }
 }
+
 
 export default CitySearch;

@@ -9,14 +9,7 @@ describe("<NumberOfEvents /> component", () => {
     NumberOfEventsWrapper = shallow(<NumberOfEvents />);
   });
 
-  test('render text input', () => {
-    expect(NumberOfEventsWrapper.find('.numberInput')).toHaveLength(1);
-  });
-
-  test('render text input correcty', () => {
-    const numberOfEvents = NumberOfEventsWrapper.state('numberOfEvents');
-    expect(NumberOfEventsWrapper.find('.numberInput').prop('value')).toBe(numberOfEvents);
-  
-    
+  test("textbox is rendered", () => {
+    expect(NumberOfEventsWrapper.find(".EventsNumber")).toHaveLength(1);
   });
 });

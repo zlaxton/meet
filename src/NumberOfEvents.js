@@ -14,6 +14,7 @@ class NumberOfEvents extends Component {
           type="text"
           className="EventsNumber"
           value={numberOfEvents}
+          
         />
 
       </div>

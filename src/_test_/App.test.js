@@ -7,6 +7,28 @@ import NumberOfEvents from '../NumberOfEvents';
 import { mockData } from '../mock-data';
 import { extractLocations, getEvents } from '../api';
 
+describe("<App /> component", () => {
+  let AppWrapper;
+
+  beforeAll(() => {
+    AppWrapper = shallow(<App />);
+    AppWrapper.setState({ showWelcomeScreen: false });
+  });
+
+  test("render list of events", () => {
+    expect(AppWrapper.find(EventList)).toHaveLength(1);
+  });
+
+  test("render CitySearch", () => {
+    expect(AppWrapper.find(CitySearch)).toHaveLength(1);
+  });
+
+  test("render NumberOfEvents", () => {
+    expect(AppWrapper.find(NumberOfEvents)).toHaveLength(1);
+  });
+});
+
+
 
 describe('<App /> integration', () => {
   test('App passes "events" state as a prop to EventList', () => {
@@ -29,7 +51,7 @@ test("the component EventList renders mockdata correctly", async () => {
   let AppWrapper = mount(<App />);
   AppWrapper.setState({ showWelcomeScreen: false });
   const allEvents = await getEvents();
-  const number = 10;
+  const number = 32;
   AppWrapper.setState({
     events: allEvents.slice(0, number),
     numberOfEvents: number,

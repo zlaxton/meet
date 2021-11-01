@@ -30,7 +30,7 @@ const getToken = async (code) => {
   
     return access_token;
   };
-  const checkToken = async (accessToken) => {
+  export const checkToken = async (accessToken) => {
     const result = await fetch(
       `https://www.googleapis.com/oauth2/v1/tokeninfo?access_token=${accessToken}`
     )
@@ -54,11 +54,6 @@ const getToken = async (code) => {
       return mockData;
     }
 
-    if (!navigator.onLine) {
-      const events  = await localStorage.getItem("lastEvents");
-      NProgress.done();
-      return  events?JSON.parse(events).events:[];
-    }
 
     const token = await getAccessToken();
 
@@ -86,7 +81,7 @@ export const getAccessToken = async () => {
     const code = await searchParams.get("code");
     if(!code) {
       const results = await axios.get(
-        "https://6gsa36bt1l.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
+        "https://hr1e030yj2.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url"
       );
       const { authUrl } = results.data;
       return (window.location.href = authUrl);

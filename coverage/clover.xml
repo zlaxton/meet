@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1635800540681" clover="3.2.0">
-  <project timestamp="1635800540681" name="All files">
+<coverage generated="1635801070416" clover="3.2.0">
+  <project timestamp="1635801070417" name="All files">
     <metrics statements="118" coveredstatements="53" conditionals="50" coveredconditionals="13" methods="39" coveredmethods="26" elements="207" coveredelements="92" complexity="0" loc="118" ncloc="118" packages="1" files="10" classes="10"/>
     <file name="App.js" path="C:\Users\Zlatan\OneDrive\Documents\GitHub\meet\src\App.js">
       <metrics statements="12" coveredstatements="12" conditionals="4" coveredconditionals="4" methods="7" coveredmethods="7"/>

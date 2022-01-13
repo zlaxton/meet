@@ -1,38 +1,223 @@
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap);
 .App {
+  text-align: center;
+  padding: 2% 5%;
+  font-family: "Bree Serif", serif;
+}
+
+.App * {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.display-none {
+  display: none;
+}
+.showSuggestions {
+  display: block;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px 6px 8px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 14px;
+  line-height: 20px;
+  align-self: center;
+  height: 38px;
+}
+
+.city {
+  width: 250px;
+}
+
+.CitySearch {
+  font-family: "Bree Serif", serif;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  max-width: 300px;
+  margin: auto;
+  position: relative;
+}
+
+.suggestions {
+  font-family: "Bree Serif", serif;
+  width: 250px;
+  position: absolute;
+  z-index: 2;
+  align-self: center;
+  margin: 0;
+  top: 43px;
+  font-size: 14px;
+  box-shadow: 10px 10px 16px -12px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+  font-family: "Bree Serif", serif;
+  color: black;
+  font-size: 50px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.suggestions > li {
+  font-family: "Bree Serif", serif;
+  text-align: left;
+  padding: 8px 6px 8px 10px;
+  background-color: black;
+  color: lightgray;
+  cursor: default;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.suggestions > li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.suggestions > li:hover {
+  background-color: #de960b;
+  color: lightgray;
+}
+
+.EventList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .EventList {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.event {
+  padding: 10px 10px 35px;
+  margin-bottom: 10px;
+  text-align: left;
+  border: 3px solid black;
+  border-radius: 4px;
+  display: grid;
+  position: relative;
+  background-color: white;
+}
+
+.details-btn {
+  font-family: "Bree Serif", serif;
+  background-color: black;
+  color: lightgray;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+label {
+  color: black;
+}
+
+.details-btn:hover {
+  background-color: #de960b;
+  color: lightgray;
+}
+
+.scrollup-btn {
+  font-family: "Bree Serif", serif;
+  position: fixed;
+  bottom: 65px;
+  right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  background-color: black;
+  color: lightgray;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+}
+
+.scrollup-btn:hover {
+  background-color: #de960b;
+  color: lightgray;
+}
+
+.location-pin {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.group-name {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.going,
+.visibility {
+  font-style: italic;
+}
+
+.description {
+  overflow-x: hidden;
+}
+
+.numberOfEvents {
+  width: 200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.Alert {
+  position: fixed;
+  top: 20px;
+}
+
+.data-vis-wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.data-vis-wrapper .recharts-responsive-container {
+  min-width: 100%;
+  display: flex;
+}
+.recharts-surface {
+  overflow: visible;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 992px) {
+  .data-vis-wrapper {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  .data-vis-wrapper .recharts-responsive-container {
+    flex-basis: 50%;
+    max-width: 50%;
+    min-width: auto;
+    margin: 0 auto;
   }
 }

@@ -2,9 +2,11 @@
   "liveServer.settings.port": 5501,
   "cSpell.words": [
     "atatus",
+    "browserslist",
     "cacheable",
     "eventlist",
     "newurl",
+    "noopener",
     "nprogress",
     "precache",
     "precached",

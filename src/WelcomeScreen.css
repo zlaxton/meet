@@ -3,13 +3,23 @@
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  background: #00d3e2;
 }
-.login {
-  position: absolute;
-  top: 45%;
-  left: 50%;
+
+.WelcomeScreen__content {
+  background-color: white;
+  padding-top: 80px;
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
 }
+
+.WelcomeScreen__content__heading {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
 .login-button {
   color: #494949;
   text-transform: uppercase;
@@ -21,6 +31,7 @@
   min-width: 10rem;
   margin: 1rem;
 }
+
 .google-btn {
   width: 184px;
   height: 42px;
@@ -29,6 +40,7 @@
   border-radius: 2px;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 .google-btn:hover {
   box-shadow: 0 0 6px #4285f4;
 }
@@ -36,6 +48,7 @@
 .google-btn:active {
   background: #1669f2;
 }
+
 .google-icon-wrapper {
   position: absolute;
   margin-top: 1px;
@@ -45,6 +58,7 @@
   border-radius: 2px;
   background-color: #fff;
 }
+
 .google-icon {
   position: absolute;
   margin-top: 11px;
@@ -52,6 +66,7 @@
   width: 18px;
   height: 18px;
 }
+
 .btn-text {
   float: right;
   color: #fff;
@@ -64,6 +79,15 @@
   text-align: center;
 }
 
-.button_cont {
-  margin-top: 35px;
+.WelcomeScreen__privacy-policy {
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.WelcomeScreen__app-info {
+  max-width: 750px;
+  margin: auto;
+  padding: 10px;
 }

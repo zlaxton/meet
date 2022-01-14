@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 class Event extends Component {
-
   state = {
     show: false,
   };
@@ -18,7 +17,9 @@ class Event extends Component {
         <ul>
           <li className="EventSummary">{event.summary}</li>
           <li className="EventLocation">{event.location}</li>
-          <li className="EventDate">start: {event.start.dateTime} - Time Zone: {event.start.timeZone}</li>
+          <li className="EventDate">
+            start: {event.start.dateTime} - Time Zone: {event.start.timeZone}
+          </li>
           {this.state.show === true && (
             <p className="EventDetails">{event.description}</p>
           )}

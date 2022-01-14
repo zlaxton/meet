@@ -38,7 +38,7 @@ function WelcomeScreen(props) {
           </div>
         </div>
         <a
-          href="https://rcarpus.github.io/meet-app/privacy.html"
+          href="https://zlaxton.github.io/meet-app/privacy.html"
           rel="nofollow noopener"
           className="WelcomeScreen__privacy-policy"
         >
@@ -71,17 +71,6 @@ function WelcomeScreen(props) {
             but a calendar provided by CareerFoundry as part of their Full-Stack
             Immersion course. No user information is saved or used within the
             application, and personal calendars aren’t accessed.
-          </p>
-          <p>
-            If you'd like to see more of my work, please visit{" "}
-            <a
-              href="http://zlaxton.github.io"
-              target={"_blank"}
-              rel="noreferrer"
-            >
-              my portfolio site at zlaxton.github.io
-            </a>
-            .
           </p>
         </div>
       </div>
